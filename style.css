@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto, 微軟正黑體;
+  font-weight: 300;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  margin: 0 auto 72px;
+  max-width: 1200px;
+  /* padding: 48px 0 0 0; */
+}
+.first_main {
+  margin: 48px auto;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+}
+h2 {
+  font-size: 32px;
+  line-height: 45px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #000;
+}
+img {
+  max-width: 100%;
+}
+li {
+  font-size: 24px;
+  line-height: 36px;
+  list-style-type: none;
+}
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.t1::after {
+  content: "PROFILE";
+}
+.t2::after {
+  content: "EDUCATION";
+}
+.t3::after {
+  content: "SKILLS";
+  color: white !important;
+}
+.t4::after {
+  content: "WORK EXPERIENCE";
+}
+.t5::after {
+  content: "CONTACT METHOD";
+  color: white !important;
+}
+.t1::after,
+.t2::after,
+.t3::after,
+.t4::after,
+.t5::after {
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 16px;
+  color: #a00404;
+}
+.titleName {
+  font-size: 80px;
+  width: 288px;
+  font-weight: 300;
+  line-height: 90px;
+  margin-bottom: 24px;
+}
+.userImg {
+  overflow: hidden;
+  width: 324px;
+  height: 324px;
+  border-radius: 999px;
+  margin-top: 48px;
+}
+.dotList li {
+  max-width: 696px;
+  padding-bottom: 24px;
+}
+.dotList li:last-child,
+.skillList li:last-child,
+.expList li:last-child {
+  padding-bottom: 0;
+}
+.dotList2 li {
+  position: relative;
+  padding-bottom: 32px;
+}
+.dotList::before,
+.dotList2 li::before {
+  width: 16px;
+  height: 16px;
+  background-color: #96a9c4;
+  content: "";
+  border-radius: 99px;
+  position: absolute;
+  transform: translate(-32px, 8px);
+}
+.dotList2 li::after {
+  height: 80px;
+  width: 1px;
+  border-left: 1px solid #96a9c4;
+  content: "";
+  position: absolute;
+  transform: translate(-24.5px, 8px);
+  left: 0;
+}
+.dotList2 li:last-child::after {
+  display: none;
+}
+.mainOutMax {
+  position: relative;
+  height: 494px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 79px;
+}
+.mainOut {
+  height: 360px;
+  flex-basis: 100%;
+  background-color: #96a9c4;
+}
+.mainOut .main {
+  width: 1200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #415165;
+  color: white;
+  text-align: center;
+  padding: 24px 102px;
+}
+.mainOut .main hr {
+  border-top-color: white;
+}
+.skillList {
+  border-left: 1px solid white;
+  text-align-last: left;
+  width: 250px;
+  margin: 40px auto;
+}
+.skillList li {
+  padding-bottom: 10px;
+}
+.expList {
+  border-left: 1px solid #96a9c4;
+  margin-left: 16px;
+}
+.expList li {
+  padding-bottom: 32px;
+}
+.expList p {
+  max-width: 642px;
+}
+.expList img {
+  max-width: 100px;
+}
+footer {
+  color: white;
+  text-align: center;
+  background-color: #415165;
+  padding: 24px 0 48px 0;
+}
+footer hr {
+  border-color: white;
+}
+footer .main,
+.social {
+  margin-bottom: 0;
+}
+.social li {
+  display: inline-block;
+  margin-left: 24px;
+}
+.contactList li {
+  margin-bottom: 16px;
+}
